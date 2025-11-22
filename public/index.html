@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Machine Health Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Real-Time Machine Health Dashboard</h2>
+
+    <div class="status-box">
+        <h3>Machine Status: <span id="machineStatus">Loading...</span></h3>
+    </div>
+
+    <div class="grid">
+        <canvas id="rmsChart"></canvas>
+        <canvas id="fftChart"></canvas>
+    </div>
+
+    <h3>Upload MATLAB FFT CSV (Optional)</h3>
+    <input type="file" id="csvUpload">
+    <button onclick="uploadCSV()">Upload</button>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
